@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vectors - Guide to IJSO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    code {
+      background-color: #eef;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    .example {
+      background: #f0f9ff;
+      border-left: 4px solid #3498db;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vectors</h1>
+
+    <h2>What is a Vector?</h2>
+    <p>A <strong>vector</strong> is a quantity that has both magnitude and direction. Represented typically with an arrow: length shows magnitude and the arrowhead shows direction.</p>
+    <p>Examples of vectors: displacement, velocity, acceleration, force, momentum.</p>
+
+    <h2>What is a Scalar Quantity?</h2>
+    <p>A <strong>scalar</strong> quantity has only magnitude, no direction.</p>
+    <p>Examples: mass, time, temperature, speed.</p>
+
+    <h2>How to Represent a Vector</h2>
+    <p>Vectors can be represented:</p>
+    <ul>
+      <li>Graphically – using arrows</li>
+      <li>With notations – using components (2D for IJSO)</li>
+    </ul>
+
+    <h2>Components of a Vector</h2>
+    <p>If a vector has magnitude <code>A</code> and angle <code>θ</code> from horizontal, then it's components are</p>
+    <ul>
+      <li>Horizontal component (x): <code>Ax = A cos(θ)</code></li>
+      <li>Vertical component (y): <code>Ay = A sin(θ)</code></li>
+    </ul>
+
+    <p>Expressed with unit vectors: <code>Ax î + Ay ĵ</code></p>
+
+    <h2>Addition of Vectors Using Components</h2>
+    <ul>
+      <li><code>Rx = Ax + Bx</code></li>
+      <li><code>Ry = Ay + By</code></li>
+      <li><code>R = √(Rx² + Ry²)</code></li>
+      <li><code>θ = tan⁻¹(Ry / Rx)</code></li>
+    </ul>
+
+    <div class="example">
+      <h3>Example 1:</h3>
+      <p>Vector A: 5 units along x-axis</p>
+      <p>Vector B: 12 units along y-axis</p>
+      <p>What is the resultant vector?</p>
+      <p><strong>Resultant:</strong> R = √(5² + 12²) = 13</p>
+      <p><strong>Angle:</strong> θ = tan⁻¹(12 / 5) ≈ 67.4°</p>
+    </div>
+
+    <div class="example">
+      <h3>Example 2:</h3>
+      <p>A force of 15 N acts in the direction 45° above the positive x-axis, and another force of 10 N acts 30° above the positive x-axis. Find the resultant force and direction. </p>
+      <ul>
+        <li>Ax = 15 cos(45) = 10.61 N</li>
+        <li>Ay = 15 sin(45) = 10.61 N</li>
+        <li>Bx = 10 cos(30) = 8.66 N</li>
+        <li>By = 10 sin(30) = 5 N</li>
+        <li>Rx = 10.61 + 8.66 = 19.27 N</li>
+        <li>Ry = 10.61 + 5 = 15.61 N</li>
+        <li>R = √(19.27² + 15.61²) ≈ 24.8 N</li>
+        <li>θ = tan⁻¹(15.61 / 19.27) ≈ 39.0°</li>
+      </ul>
+    </div>
+
+    <h2>Practice Questions</h2>
+    <ol>
+      <li>Given <code>a = (3, 4)</code> and <code>b = (1, -2)</code>, find <code>a + b</code> and <code>a - b</code>.</li>
+      <li>If <code>C = 3i + 4j</code>, find its magnitude and angle with the x-axis.</li>
+    </ol>
+    <h2>Solutions</h2>
+    <ol>
+      <li>(4,2), (2,6)</li>
+      <li>Magnitude = 5 and angle = 53.1° with the horizontal.</li>
+    </ol>
+  </div>
+</body>
+</html>
