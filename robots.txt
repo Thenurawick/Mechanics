@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+git clone https://github.com/Thenurawick/Mechanics.git
+cd Mechanics
+echo -e "User-agent: *\nDisallow: /" > robots.txt
+git add robots.txt
+git commit -m "Add robots.txt to prevent indexing"
+git commit -m "Add robots.txt to prevent indexing"
+
